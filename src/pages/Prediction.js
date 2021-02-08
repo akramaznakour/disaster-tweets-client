@@ -87,7 +87,7 @@ const Prediction = () => {
     xgbclassifier_using_count_vector: false,
     xgbclassifier_using_skip_gram_vector: false,
     xgbclassifier_using_tfidf_vector: false,
-    lstm: false,
+    // lstm: false,
   });
   const {
     decisiontreeclassifier_using_cbow_vector,
@@ -116,7 +116,7 @@ const Prediction = () => {
     xgbclassifier_using_count_vector,
     xgbclassifier_using_skip_gram_vector,
     xgbclassifier_using_tfidf_vector,
-    lstm,
+    // lstm,
   } = models;
 
   const handelSubmit = (e) => {

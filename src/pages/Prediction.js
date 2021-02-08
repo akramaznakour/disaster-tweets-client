@@ -16,12 +16,13 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import Checkbox from "@material-ui/core/Checkbox";
 import Paper from "@material-ui/core/Paper";
+import Container from "@material-ui/core/Container";
 
 import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -42,8 +43,8 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3),
   },
   alert: {
-    width: "100%",
-    margin: theme.spacing(1),
+    // width: "100%",
+    // margin: theme.spacing(1),
   },
 }));
 
@@ -211,6 +212,7 @@ const Prediction = () => {
             >
               Predict
             </Button>
+
             {prediction &&
               prediction.map((p) => {
                 const key = Object.keys(p)[0];

@@ -10,7 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(2),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -29,7 +29,7 @@ const App = () => {
     <Container>
       <CssBaseline />
       <div className={classes.paper}>
-        <Router>
+        {/* <Router>
           <div>
             <Link className={classes.link} to="/prediction">
               Prediction
@@ -45,7 +45,8 @@ const App = () => {
               <Route path="/exploratory-data-analysis" component={EDA}></Route>
             </Switch>
           </div>
-        </Router>
+        </Router> */}
+        <Prediction />
       </div>
     </Container>
   );
